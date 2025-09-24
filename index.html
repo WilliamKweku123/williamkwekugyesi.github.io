@@ -1,149 +1,191 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>WILLIAM'S PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Kweku Gyesi - Data Analyst Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body class="bg-[#1a202c] text-[#a0aec0]">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-[#1a202c] bg-opacity-90 backdrop-blur-sm shadow-lg p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold hover:text-[#fc8181] transition-colors duration-300">William Gyesi</a>
+            <div class="space-x-4 flex">
+                <a href="#about" class="hover:text-[#fc8181] transition-colors duration-300">About</a>
+                <a href="#skills" class="hover:text-[#fc8181] transition-colors duration-300">Skills</a>
+                <a href="#projects" class="hover:text-[#fc8181] transition-colors duration-300">Projects</a>
+                <a href="#blog" class="hover:text-[#fc8181] transition-colors duration-300">Blog</a>
+                <a href="#contact" class="hover:text-[#fc8181] transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1><br />
-						WILLIAM'S PORTFOLIO</h1>
-						<p>Aspiring Business Intelligence Analyst skilled in Excel, SQL, Tableau and Python. Go to my <a href="https://www.linkedin.com/in/williamkwekugyesi-a99195225/">LinkedIn</a> profile.
-						
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex items-center justify-center p-4">
+        <div class="text-center">
+            <img src="https://placehold.co/150x150/2d3748/a0aec0?text=WG" alt="Profile Picture" class="rounded-full mx-auto mb-6 border-4 border-[#4a5568]">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-2">Hello, I'm <span class="text-[#fc8181]">William Gyesi</span>.</h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-8">A <span class="font-semibold text-gray-200">Data-Driven Problem Solver</span> and <span class="font-semibold text-gray-200">Aspiring Data Analyst</span>.</p>
+            <a href="#projects" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#ffb0b0] transition-colors duration-300">View My Work</a>
+        </div>
+    </section>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Overview</a>
-					</header>
+    <!-- About Section -->
+    <section id="about" class="py-20 p-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-center leading-relaxed space-y-4">
+                <p>
+                    Hello! I'm William Gyesi, and I'm passionate about uncovering insights from data to drive informed decisions. I have a strong foundation in data cleaning, exploratory analysis, and visualization, and I love turning raw data into compelling stories.
+                </p>
+                <p>
+                    I have experience working with various datasets and a knack for identifying trends and patterns. My goal is to use my analytical skills to solve complex problems and contribute to meaningful outcomes.
+                </p>
+            </div>
+        </div>
+    </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 p-4 bg-[#2d3748]">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">My Skills & Tools</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-5xl mx-auto">
+                <!-- Skill Card Template -->
+                <div class="flex flex-col items-center justify-center bg-[#4a5568] p-4 rounded-lg shadow-md border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <svg class="h-10 w-10 text-[#fc8181] mb-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm2 14v-4h2v4h-2zm-4 0v-8h2v8h-2zm-4 0v-6h2v6H6z"/>
+                    </svg>
+                    <span class="text-lg font-semibold text-gray-200">Python</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-[#4a5568] p-4 rounded-lg shadow-md border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <svg class="h-10 w-10 text-[#fc8181] mb-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zM6 10h12v4H6v-4z"/>
+                    </svg>
+                    <span class="text-lg font-semibold text-gray-200">SQL</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-[#4a5568] p-4 rounded-lg shadow-md border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <svg class="h-10 w-10 text-[#fc8181] mb-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm2 14v-4h2v4h-2zm-4 0v-8h2v8h-2zm-4 0v-6h2v6H6z"/>
+                    </svg>
+                    <span class="text-lg font-semibold text-gray-200">Tableau</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-[#4a5568] p-4 rounded-lg shadow-md border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <svg class="h-10 w-10 text-[#fc8181] mb-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm2 14v-4h2v4h-2zm-4 0v-8h2v8h-2zm-4 0v-6h2v6H6z"/>
+                    </svg>
+                    <span class="text-lg font-semibold text-gray-200">Power BI</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-[#4a5568] p-4 rounded-lg shadow-md border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <svg class="h-10 w-10 text-[#fc8181] mb-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm2 14v-4h2v4h-2zm-4 0v-8h2v8h-2zm-4 0v-6h2v6H6z"/>
+                    </svg>
+                    <span class="text-lg font-semibold text-gray-200">Excel</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 p-4 bg-[#2d3748]">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Customer Churn Analysis -->
+                <div class="bg-[#4a5568] p-6 rounded-lg shadow-xl border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Customer Churn Analysis</h3>
+                    <p class="text-gray-400 mb-4">An analysis of a telecom dataset to predict customer churn. Utilized Python for data cleaning and a machine learning model to identify key factors contributing to churn.</p>
+                    <a href="#" target="_blank" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-2 px-4 rounded-full hover:bg-[#ffb0b0] transition-colors duration-300">Live Dashboard</a>
+                    <a href="#" target="_blank" class="inline-block text-[#fc8181] font-semibold py-2 px-4 rounded-full hover:underline ml-2">GitHub</a>
+                </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://public.tableau.com/views/HRAnalyticsDashboard_17034201792700/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link">HR ANALYTICS DASHBOARD<br />
-									</a></h2>
-									<p>In this project, data was sourced from Kaggle's dataset platform, I cleaned the data using Excel, imported into Tableau and generated insights into Attrition challenges the company was facing.
-										This dashboard helped management take critical decisions into solving these problems by targeting areas of interest that were highlighted.</p>
-									<ul class="actions special"><br />
-									<br />
-									</p>
-								</header>
-								<a href="https://public.tableau.com/views/HRAnalyticsDashboard_17034201792700/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link" class="image main"><img src="images/Dashboard1.jpeg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://public.tableau.com/views/HRAnalyticsDashboard_17034201792700/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link" class="button large">View Project</a></li>
-								</ul>
-							</article>
+                <!-- Project 2: Sales Performance Dashboard -->
+                <div class="bg-[#4a5568] p-6 rounded-lg shadow-xl border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Sales Performance Dashboard</h3>
+                    <p class="text-gray-400 mb-4">Developed an interactive dashboard using Tableau/Power BI to track key sales metrics. The dashboard provides insights into regional performance and product trends.</p>
+                    <a href="#" target="_blank" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-2 px-4 rounded-full hover:bg-[#ffb0b0] transition-colors duration-300">Live Dashboard</a>
+                    <a href="#" target="_blank" class="inline-block text-[#fc8181] font-semibold py-2 px-4 rounded-full hover:underline ml-2">GitHub</a>
+                </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://public.tableau.com/views/WinoraBikes/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link">Executive Dashboard for Winora Group<br />
-										
-									</header>
-									<a href="" class="image fit"><img src="images/Dash1.png" alt="" /></a>
-									<p>In this project dataset was extracted from Winora Retail Database. Data was cleaned, analysed and created an interactive dashboard to be presented to Management with
-										insights of revenue generated from 2016 to 2018 with respect to various areas of interest.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/views/WinoraBikes/Dashboard1?:language=en-GB&publish=yes&:display_count=n&:origin=viz_share_link" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:4b2c89ca-ecea-3800-9ebd-4f0681e403a8">ForestQuery into Global Deforestation, 1990 to 2016 <br />
-										</a></h2>
-									</header>
-									<a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:4b2c89ca-ecea-3800-9ebd-4f0681e403a8" class="image fit"><img src="images/about_sql_5dcf267e9c.jpg" alt="" /></a>
-									<p>ForestQuery was on a mission to combat deforestation around the world and to raise awareness
-										about this topic and its impact on the environment. The data analysis team at ForestQuery
-										obtained data from the World Bank that included forest area and total land area by country and
-										year from 1990 to 2016, as well as a table of countries and the regions to which they belong.
-										The data analysis team used SQL to bring these tables together and to query them in an
-										effort to find areas of concern as well as areas that presented an opportunity to learn from
-										successes.</p>
-									<ul class="actions special">
-										<li><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:4b2c89ca-ecea-3800-9ebd-4f0681e403a8" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:9651b850-5e00-311d-a91c-c773e50dc4fd">Data Cleaning using Python<br />
-										</a></h2>
-									</header>
-									<a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:9651b850-5e00-311d-a91c-c773e50dc4fd" class="image fit"><img src="images/7-reasons.jpeg" alt="" /></a>
-									<p>A Call Center needed a cleaned Data records of customers that could be contacted. I imported the data set
-										into Python, cleaned and manipulated the data and presented the final solution as requested.</p>
-									<ul class="actions special">
-										<li><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:9651b850-5e00-311d-a91c-c773e50dc4fd" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-								
-										<h2><a href="https://docs.google.com/spreadsheets/d/1G08rS-j-ImPP215PZQWioxBimnzxWKphE0RAcIZdHKY/edit?usp=sharing"><br />
-										FINANCIAL FORECAST USING SPREADSHEET</a></h2>
-									</header>
-									<a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:d396e40c-8144-39ae-8730-18afd9ac09bb" class="image fit"><img src="images/7F952E29-CC9A-4267-B907-9E2AA3262FC5_1_201_a.jpeg" alt="" /></a>
-									<p>In this project, I analyzed real-life data from the New York Stock Exchange. I extracted a subset of a large dataset provided by Kaggle that contains historical financial data from S&P 500 companies.</p>
-									<ul class="actions special">
-										<li><a href="https://docs.google.com/spreadsheets/d/1G08rS-j-ImPP215PZQWioxBimnzxWKphE0RAcIZdHKY/edit?usp=sharing" class="button">View Project</a></li>
-									
-									</ul>
-					</div>
+                <!-- Project 3: E-commerce Data Exploration -->
+                <div class="bg-[#4a5568] p-6 rounded-lg shadow-xl border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">E-commerce Data Exploration</h3>
+                    <p class="text-gray-400 mb-4">Exploratory data analysis on an e-commerce dataset. Used SQL for data querying and Python for visualization to identify top-selling products and customer segments.</p>
+                    <a href="#" target="_blank" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-2 px-4 rounded-full hover:bg-[#ffb0b0] transition-colors duration-300">Live Report</a>
+                    <a href="#" target="_blank" class="inline-block text-[#fc8181] font-semibold py-2 px-4 rounded-full hover:underline ml-2">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Footer -->
-					
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 p-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">My Blog & Analysis Articles</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-[#4a5568] p-6 rounded-lg shadow-xl border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">The Importance of Data Cleaning</h3>
+                    <p class="text-gray-400 mb-4">A deep dive into the initial, crucial steps of any data analysis project and best practices for ensuring data integrity.</p>
+                    <a href="#" target="_blank" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-2 px-4 rounded-full hover:bg-[#ffb0b0] transition-colors duration-300">Read Article</a>
+                </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+                <!-- Blog Post 2 -->
+                <div class="bg-[#4a5568] p-6 rounded-lg shadow-xl border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Visualizing Sales Trends with Tableau</h3>
+                    <p class="text-gray-400 mb-4">A case study demonstrating how to use Tableau to create a dynamic and insightful sales dashboard for business stakeholders.</p>
+                    <a href="#" target="_blank" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-2 px-4 rounded-full hover:bg-[#ffb0b0] transition-colors duration-300">Read Article</a>
+                </div>
 
-			</div>
+                <!-- Blog Post 3 -->
+                <div class="bg-[#4a5568] p-6 rounded-lg shadow-xl border border-[#4a5568] transform transition-transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Unlocking Insights with Python and Pandas</h3>
+                    <p class="text-gray-400 mb-4">Explore the power of Python's Pandas library for performing exploratory data analysis on a real-world dataset.</p>
+                    <a href="#" target="_blank" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-2 px-4 rounded-full hover:bg-[#ffb0b0] transition-colors duration-300">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 p-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+            <p class="max-w-xl mx-auto mb-8 text-lg">I'm currently seeking new opportunities and data-related collaborations. Feel free to reach out to me with any questions or just to say hello!</p>
+            <a href="mailto:your.email@example.com" class="inline-block bg-[#fc8181] text-[#1a202c] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#ffb0b0] transition-colors duration-300">Say Hello</a>
+            <div class="mt-8 space-x-4">
+                <a href="#" target="_blank" class="text-[#fc8181] hover:text-[#ffb0b0] transition-colors duration-300">LinkedIn</a>
+                <a href="#" target="_blank" class="text-[#fc8181] hover:text-[#ffb0b0] transition-colors duration-300">GitHub</a>
+                <a href="#" target="_blank" class="text-[#fc8181] hover:text-[#ffb0b0] transition-colors duration-300">Twitter</a>
+            </div>
+        </div>
+    </section>
 
-	</body>
+    <!-- Footer -->
+    <footer class="bg-[#2d3748] text-center p-4 text-gray-400">
+        <p>&copy; 2024 William Kweku Gyesi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
